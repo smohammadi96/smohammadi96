@@ -25,3 +25,18 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+ol.description {
+  @apply flex flex-col gap-3;
+
+}
+
+ol.description li{
+  @apply [&>ol]:ms-6 [&>ol]:mt-3;
+  list-style-type: disc;
+  
+}
+
+ol.description li > ol li {
+  list-style-type: circle;
+}
