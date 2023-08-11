@@ -3,8 +3,9 @@ import Image from "next/image";
 import { HeaderedSection } from "@/components/section";
 import Timeline from "@/components/timeline";
 import Skills from "@/components/skills";
+import Projects from "@/components/projects";
 
-import { education, experiences } from "./data";
+import { education, experiences, projects } from "./data";
 
 export default function Home() {
   return (
@@ -48,7 +49,7 @@ export default function Home() {
         <h2 className="text-blue-950 font-light text-4xl">
           Hello! I&apos;m Sanaz Mohammadi
         </h2>
-        <p className="max-w-3xl text-gray-800">
+        <p className="max-w-3xl text-gray-800 text-center">
           I am an Artificial Intelligence researcher with 3 years of experience
           working as a data scientist in the computer software industry. My
           expertise lies in Deep Learning, Machine Learning, Neural networks,
@@ -144,7 +145,9 @@ export default function Home() {
       </HeaderedSection>
 
       <HeaderedSection id="projects" header="Projects">
-        <div className="flex flex-col"></div>
+        <div className="flex flex-col">
+          <Projects data={projects} />
+        </div>
       </HeaderedSection>
     </main>
   );

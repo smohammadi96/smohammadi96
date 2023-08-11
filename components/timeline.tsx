@@ -9,7 +9,7 @@ interface TimelineStepProps {
 
 export default function Timeline({ items }: { items: TimelineStepProps[] }) {
   return (
-    <ol className="w-full [&>li]:m-0 [&>li]:list-none">
+    <ol className="w-full [&>li]:m-0 [&>li]:list-none gap-0">
       {items.map((ex, idx) => (
         <TimelineStep
           key={idx}
