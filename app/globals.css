@@ -26,17 +26,39 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-ol.description {
+ol {
   @apply flex flex-col gap-3;
-
 }
 
-ol.description li{
+.border-left::before {
+  content: "";
+  display: block;
+  width: 1px;
+  background: theme(colors.gray.200);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+li:last-child .border-left:before {
+  background: linear-gradient(
+    to top,
+    rgba(129, 138, 145, 0) 0,
+    theme(colors.gray.200) 100px,
+    theme(colors.gray.200) 100%
+  );
+}
+
+ol li {
   @apply [&>ol]:ms-6 [&>ol]:mt-3;
   list-style-type: disc;
-  
 }
 
-ol.description li > ol li {
+ol li > ol li {
   list-style-type: circle;
+}
+
+.skill-item {
+  @apply bg-blue-950 !text-white px-3 py-1 text-sm leading-5;
 }

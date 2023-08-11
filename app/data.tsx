@@ -1,3 +1,5 @@
+import Education from "@/components/education";
+
 export const experiences = [
   {
     title: "Machine Learning Engineer",
@@ -107,13 +109,79 @@ export const education = [
   {
     title: "Shahid Rajayi University, Tehran, Iran",
     subtitle: "BSC",
-    description: "Computer Science & Eng.",
+    description: (
+      <Education
+        description="Computer Science & Eng."
+        descriptionModal={
+          <div className="flex flex-col gap-2">
+            <h3 className="font-semibold text-blue-800">
+              Brain tissue segmentation in the presence of MS lesions and INU
+              artifact
+            </h3>
+            <p className="text-gray-700 text-sm">
+              Supervisor: Prof. Mohsen Ebrahimi Moghaddam
+            </p>
+
+            <ol className="ms-6">
+              <li>
+                Brain tissue segmentation challenges: Intensity non-uniformity
+                is a crucial factor for quantitative magnetic resonance imaging
+                (MRI).
+              </li>
+              <li>
+                The proposed method is an end-to-end method that is a
+                combination of adversarial generative networks and a
+                segmentation module to achieve better performance in brain
+                tissue segmentation without any additional pre-processing to
+                remove noise and artifacts.
+              </li>
+              <li>Datasets: Brainweb, IBSR, CombiRX</li>
+            </ol>
+          </div>
+        }
+      />
+    ),
     time: "2015 - 2019",
   },
   {
     title: "Shahid Beheshti University, Tehran, Iran",
     subtitle: "MSE",
-    description: "Artificial Intelligence",
+    description: (
+      <Education
+        description="Artificial Intelligence"
+        descriptionModal={
+          <div className="flex flex-col gap-2">
+            <h3 className="font-semibold text-blue-800">
+              Hand Gesture Recognition
+            </h3>
+            <p className="text-gray-700 text-sm">
+              Supervisor: Dr. Masoume Safkhani, Mr. Alireza Akhavanpour
+            </p>
+
+            <ol className="ms-6">
+              <li>
+                Collected 8000 hand gesture dataset in 8 classes in complex
+                background and different volunteers
+              </li>
+              <li>
+                {" "}
+                Fine-tuning Imagenet models such as VGG16, ResNet, Xception-v3,
+                inception and Mobilenet to classify the proposed hand gesture
+                dataset
+              </li>
+              <li>
+                {" "}
+                Trained object detections (YOLOv4, YOLOv3-tiny, SSD MobileNet
+                and EfficientDet) on proposed dataset
+              </li>
+              <li>Classification hand gestures key points by Xgboost</li>
+              <li>Demo from YOLO-v3 on LinkedIn: Video</li>
+              <li>Available Code on GitHub1 and GitHub2</li>
+            </ol>
+          </div>
+        }
+      />
+    ),
     time: "2020 - 2023",
   },
 ];
