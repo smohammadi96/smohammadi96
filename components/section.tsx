@@ -20,7 +20,7 @@ export function HeaderedSection({
     <article
       id={id}
       className={cx(
-        "w-full flex flex-col justify-start items-center bg-white text-blue-900 p-12 border-t-2 border-gray-300 [--text]:red",
+        "w-full flex flex-col justify-start items-center bg-white text-1blue-900 p-12 border-t-2 border-gray-300 [--text]:red dark:bg-gray-950",
         colorScheme === "dark" && "bg-slate-900 text-white",
         className
       )}

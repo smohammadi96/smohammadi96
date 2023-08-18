@@ -36,7 +36,7 @@ export function ProjectItem({
     <div className="flex items-center justify-between gap-12">
       <div className="flex flex-col gap-3">
         <p className="text-lg font-bold">{title}</p>
-        <p className="text-sm text-gray-700 prose">
+        <p className="prose text-sm text-gray-700 dark:text-gray-200 dark:prose-invert">
           <ReactMarkdown>{description}</ReactMarkdown>
         </p>
       </div>

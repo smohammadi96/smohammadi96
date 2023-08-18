@@ -58,7 +58,3 @@ ol li {
 ol li > ol li {
   list-style-type: circle;
 }
-
-.skill-item {
-  @apply bg-blue-950 !text-white px-3 py-1 text-sm leading-5;
-}

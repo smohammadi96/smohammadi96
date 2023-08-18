@@ -110,11 +110,11 @@ export const experiences = [
 
 export const education = [
   {
-    title: "Shahid Rajayi University, Tehran, Iran",
-    subtitle: "BSC",
+    title: "Shahid Beheshti University, Tehran, Iran",
+    subtitle: "MSC",
     description: (
       <Education
-        description="Computer Science & Eng."
+        description="Artificial Intelligence"
         descriptionModal={
           <article className="prose">
             <ReactMarkdown>{dedent`
@@ -138,14 +138,14 @@ remove noise and artifacts.
         }
       />
     ),
-    time: "2015 - 2019",
+    time: "2020 - 2023",
   },
   {
-    title: "Shahid Beheshti University, Tehran, Iran",
-    subtitle: "MSE",
+    title: "Shahid Rajayi University, Tehran, Iran",
+    subtitle: "BSC",
     description: (
       <Education
-        description="Artificial Intelligence"
+        description="Computer Science & Eng."
         descriptionModal={
           <article className="prose">
             <ReactMarkdown>{dedent`
@@ -170,7 +170,7 @@ dataset
         }
       />
     ),
-    time: "2020 - 2023",
+    time: "2015 - 2019",
   },
 ];
 

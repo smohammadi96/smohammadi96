@@ -35,6 +35,7 @@ export default function Education({
           />
         </svg>
       </Button>
+
       <Dialog
         isOpen={isOpen}
         onClose={setIsOpen.bind(null, false)}

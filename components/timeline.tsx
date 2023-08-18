@@ -32,7 +32,7 @@ export function TimelineStep({
   return (
     <li className="mb-10 ml-4 relative">
       <div className="w-ull flex justify-center items-start">
-        <div className="flex flex-col gap-3 w-1/2 items-end p-12 py-6 justify-center sticky top-0">
+        <div className="flex flex-col gap-3 w-1/2 items-end p-12 py-6 justify-center sticky top-20">
           <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
             {time}
           </time>
