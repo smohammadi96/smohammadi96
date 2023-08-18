@@ -5,104 +5,86 @@ import Education from "@/components/education";
 
 export const experiences = [
   {
-    title: "Machine Learning Engineer",
+    title: "Data Scientist",
     subtitle: "Max Holding",
+    link: "https://maxholding.co",
     description: (
-      <ol className="description">
-        <li>
-          Voice assistant chatbot
-          <ol>
-            <li>
-              R&D on Text to Speech (TTS) and Automatic Speech Recognition (ASR)
-            </li>
-            <li>Languages: English and Persian</li>
-            <li>
-              TTS methods: Tacotron, FastSpeech, Flowtron, LightSpeech,
-              Priorgrad
-            </li>
-            <li>
-              ASR methods: Wav2vec (XLSR), Nvidia Nemo, Kaldi (Vosk), DeepSpeech
-            </li>
-          </ol>
-        </li>
-      </ol>
+      <article className="prose dark:prose-invert">
+        <ReactMarkdown>{dedent`
+**Extract personal information from Iranian 
+National Identification card**
+
+- Generated various image datasets with 
+different augmentations
+- Languages: English and Persian
+- Fine-tuned *PPOCR-V3* and *Paddle-OCR (Arabic 
+Language)* for Recognition  
+
+  
+
+**Voice Assistant chatbot**
+
+- R&D on Text to Speech (TTS) and Automatic 
+Speech Recognition (ASR)
+- Languages: English and Persian
+- TTS methods: Tacotron, FastSpeech, Flowtron, 
+LightSpeech, and Priorgrad
+- ASR methods: Wav2vec (XLSR), Nvidia Nemo, 
+Kaldi (Vosk), and DeepSpeech
+          `}</ReactMarkdown>
+      </article>
     ),
     time: "Sep 2022 - Now",
   },
   {
     title: "Machine Learning Engineer",
-    subtitle: "Farasat Soft",
+    subtitle: "FarasatSoft",
+    link: "https://farasatsoft.ir",
     description: (
-      <ol className="description">
-        <li>
-          Fake sign verification on Cheque (Informatics Services Corporation)
-          <ol className="description">
-            <li>Collected signs by volunteers</li>
-            <li>Trained Siamese Networks for fake sign recognition</li>
-            <li>
-              Installation of the software on Oracle Linux with docker and
-              without docker
-            </li>
-          </ol>
-        </li>
+      <article className="prose dark:prose-invert">
+        <ReactMarkdown>{dedent`
+**Fake Sign Verification on Cheque (Informatics Services Corporation)**
 
-        <li>
-          Implimentation image browser with Machine Learning algorithms.
-          <ol>
-            <li>
-              Object detections (Yolo9000, Faster RCNN, SSD resnet) API on
-              Ubuntu Linux
-            </li>
-            <li>
-              Served Faster RCNN and SSD-resnet with TensorFlow serving (gRpc)
-            </li>
-            <li>Find words Connection by WordNET</li>
-          </ol>
-        </li>
-      </ol>
+- Collected signs by volunteers
+- Trained Siamese Networks for fake sign recognition
+- Installed software on Oracle Linux via docker
+
+**Implimenting an Image Browser via Machine 
+Learning Algorithms**
+
+- Object detections (Yolo9000, Faster RCNN, 
+  SSD ResNet), and API on Ubuntu Linux
+- Served Faster RCNN and SSD-ResNet via TensorFlow serving (gRPC)
+- Extracted words relationship via WordNET
+          `}</ReactMarkdown>
+      </article>
     ),
     time: "Jan 2022 - Sep 2022",
   },
   {
     title: "Deep Learning Developer",
     subtitle: "Shenasa AI",
+    link: "https://shenasa.ai",
     description: (
-      <ol className="description">
-        <li>
-          Diagnosis COVID-19 from CT-scan images. (Classification and
-          Segmentation)
-          <ol>
-            <li>
-              Data preparation: remove closed lungs in slices of CT-scan by
-              three methods.
-            </li>
-            <li>Edge Extraction from CT-scan slices.</li>
-            <li>
-              Classification: Fine-tuning ResNet and DenseNet for COVID-19
-              classification
-            </li>
-            <li>Segmentation: Trained Unet for infection segmentation</li>
-          </ol>
-        </li>
+      <article className="prose dark:prose-invert">
+        <ReactMarkdown>{dedent`
+**Implementing Face Recognition and Tracking System for Roll-Call Systems**
 
-        <li>
-          Implementation face recognition and tracking system for roll-call
-          systems.
-          <ol>
-            <li>Face detection and verification by RetinaNet (mxnet)</li>
-            <li>Face anti-spoofing</li>
-            <li>Face blurring API (docker-compose, nginx)</li>
-            <li>
-              Hand gesture recognition API (YOLOv4, YOLOV3-tiny)
-              (docker-compose, nginx)
-            </li>
-            <li>Face expression recognition API (docker-compose, nginx)</li>
-            <li>
-              Serving TensorFlow models (gRpc and Rest-API) and mxnet models
-            </li>
-          </ol>
-        </li>
-      </ol>
+- Face detection and verification via RetinaNet
+- Face Anti-Spoofing
+- Face Blurring API (docker-compose + nginx)
+- Hand Gesture Recognition API (YOLOv4, 
+YOLOV3-tiny)
+- Serving TensorFlow Models (gRPC and RestFull APIs) and MxNet Models
+
+**Diagnosing COVID-19 from CT-Scan images (Classification and Segmentation)**
+
+- Data Preparation: removed closed lungs and extracted edges in CT-Scan slices
+- Classification: Fine-Tuned ResNet and DenseNet for COVID-19 classification
+- Segmentation: Trained U-net for infection 
+segmentation
+          `}</ReactMarkdown>
+      </article>
     ),
     time: "Jan 2019 - Jan 2022",
   },
@@ -122,17 +104,28 @@ export const education = [
 
 Supervisor: Prof. Mohsen Ebrahimi Moghaddam
 
-- **Brain tissue segmentation challenges**: Intensity non-uniformity
-is a crucial factor for quantitative magnetic resonance imaging
-(MRI).
+- **Brain tissue segmentation challenges**: Intensity non-uniformity Ss a crucial factor 
+for quantitative Magnetic Resonance 
+Imaging (MRI).
 
-- The proposed method is an end-to-end method that is a
-combination of **adversarial generative networks** and a
-**segmentation module** to achieve better performance in brain
-tissue segmentation without any additional pre-processing to
+- The proposed method is an End-to-End method that is a
+combination of **Adversarial Generative Networks** and a
+**Segmentation Module** to achieve better performance in Brain
+Tissue Segmentation without any additional pre-processing to
 remove noise and artifacts.
 
 - Datasets: **Brainweb**, **IBSR**, **CombiRX**
+
+#### Paper
+
+**CycleFormer: Brain tissue 
+segmentation in the
+presence of MS lesions 
+and intensity non-uniformity artifact** (to 
+  be submitted) 
+
+S. Mohammadi, M. Ebrahimi Moghaddam, A. 
+Aghaei (2023)
           `}</ReactMarkdown>
           </article>
         }
@@ -153,18 +146,27 @@ remove noise and artifacts.
 
 Supervisor: Dr. Masoume Safkhani, Mr. Alireza Akhavanpour
 
-- **Collected 8000 hand gesture dataset** in 8 classes in complex
-background and different volunteers
+-  Collected dataset that included 8000 
+images in **Static Hand Gesture Classes** in 
+complex background via different 
+volunteers.
 
-- **Fine-tuning Imagenet models** such as **VGG16**, **ResNet**, **Xception-v3**, **inception** and **Mobilenet** to classify the proposed hand gesture
-dataset
+- **Fine-Tuned *ImageNet* models** such as **VGG16**, **ResNet**, **Xception-v3**, **Inception** and **MobileNet** to classify the proposed hand gesture
+dataset.
 
-- Trained object detections (**YOLOv4**, **YOLOv3-tiny**, **SSD MobileNet** and **EfficientDet**) on proposed dataset
+- Trained Object Detections (**YOLOv4**, **YOLOv3-Tiny**, **SSD MobileNet** and **EfficientDet**) on diverse hand gesture dataset.
 
-- Classification **hand gestures key points** by **Xgboost**
-
-- Demo from **YOLO-v3** on LinkedIn: [Video](https://www.linkedin.com/posts/sanaz-mohammadi_one-of-projects-that-i-worked-on-in-intership-activity-6596420523805155328-ySHQ/?utm_source=linkedin_share&utm_medium=ios_app)  
+- Demo using **YOLO-v3** on LinkedIn: [Video](https://www.linkedin.com/posts/sanaz-mohammadi_one-of-projects-that-i-worked-on-in-intership-activity-6596420523805155328-ySHQ/?utm_source=linkedin_share&utm_medium=ios_app)  
   source available on GitHub: [dataset](https://github.com/smohammadi96/Diverse_hand_gesture_dataset) and [code](https://github.com/smohammadi96/handGesture_Recognition-Detection)
+
+#### Paper
+
+**Diverse Hand Gesture Dataset** (Under revision in Multimedia tools and 
+  applications)
+
+S. Mohammadi, M. Sabokrou, A. Akhavanpour, and R.Rastgo (2022)
+
+
           `}</ReactMarkdown>
           </article>
         }

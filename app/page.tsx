@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 import { HeaderedSection } from "@/components/section";
 import Timeline from "@/components/timeline";
@@ -27,7 +27,8 @@ export default function Home() {
       <article className="w-full flex flex-col justify-center items-center gap-4 bg-slate-800 text-blue-900 p-24 pb-0">
         <div className="bg-white flex dark:bg-gray-900 dark:text-blue-400">
           <div className="grayscale hover:grayscale-0">
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               className="object-cover w-[500px] h-[500px]"
               src="/profile.png"
               width={500}
