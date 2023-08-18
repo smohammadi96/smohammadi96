@@ -5,6 +5,7 @@ interface TimelineStepProps {
   subtitle: string;
   description: ReactNode;
   time: string;
+  link?: string;
 }
 
 export default function Timeline({ items }: { items: TimelineStepProps[] }) {
@@ -17,6 +18,7 @@ export default function Timeline({ items }: { items: TimelineStepProps[] }) {
           subtitle={ex.subtitle}
           description={ex.description}
           time={ex.time}
+          link={ex.link}
         />
       ))}
     </ol>
@@ -28,6 +30,7 @@ export function TimelineStep({
   subtitle,
   description,
   time,
+  link,
 }: TimelineStepProps) {
   return (
     <li className="mb-10 ml-4 relative">
@@ -36,7 +39,11 @@ export function TimelineStep({
           <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
             {time}
           </time>
-          <p className="font-semibold">{subtitle}</p>
+          <p className="font-semibold">
+            <a href={link} className="hover:underline">
+              {subtitle}
+            </a>
+          </p>
         </div>
 
         <div className="border-left relative flex flex-col gap-3 w-1/2 p-12 py-6 font-normal">

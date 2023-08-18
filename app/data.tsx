@@ -17,10 +17,8 @@ National Identification card**
 - Generated various image datasets with 
 different augmentations
 - Languages: English and Persian
-- Fine-tuned *PPOCR-V3* and *Paddle-OCR (Arabic 
-Language)* for Recognition  
-
-  
+- Fine-tuned **PPOCR-V3 Paddle-OCR (Arabic 
+Language)** for Recognition  
 
 **Voice Assistant chatbot**
 
@@ -165,8 +163,6 @@ dataset.
   applications)
 
 S. Mohammadi, M. Sabokrou, A. Akhavanpour, and R.Rastgo (2022)
-
-
           `}</ReactMarkdown>
           </article>
         }
