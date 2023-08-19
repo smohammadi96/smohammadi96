@@ -30,7 +30,7 @@ export default function Home() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <Image
               className="object-cover w-[500px] h-[500px]"
-              src="/profile.png"
+              src="/smohammadi96/profile.png"
               width={500}
               height={500}
               alt="Picture of Sanaz Mohammadi"
