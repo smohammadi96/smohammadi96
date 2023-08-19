@@ -47,7 +47,7 @@ Kaldi (Vosk), and DeepSpeech
 - Trained Siamese Networks for fake sign recognition
 - Installed software on Oracle Linux via docker
 
-**Implimenting an Image Browser via Machine 
+**Implementing an Image Browser via Machine 
 Learning Algorithms**
 
 - Object detections (Yolo9000, Faster RCNN, 
