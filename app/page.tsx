@@ -4,39 +4,48 @@ import { HeaderedSection } from "@/components/section";
 import Timeline from "@/components/timeline";
 import Skills from "@/components/skills";
 import Projects from "@/components/projects";
-
+// import '../.next/static/css/app/page.css'
 import { education, experiences, projects } from "./data";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <nav className="w-full flex justify-start items-center bg-white p-6 py-8 text-blue-900 sticky top-0 z-10 dark:bg-gray-950 dark:text-blue-400">
-        <h3 className="text-2xl">Sanaz Mohammadi</h3>
-        <div className="w-max grow" />
-        <ul className="flex justify-start items-center gap-12">
-          {["About", "Experience", "Education", "Skills", "Projects"].map(
-            (item, idx) => (
-              <li key={idx} className="hover:opacity-70">
-                <a href={`#${item.toLowerCase()}`}>{item}</a>
-              </li>
-            )
-          )}
-        </ul>
+      <nav className="w-full flex justify-center items-center bg-white p-6 py-8 text-blue-900 sticky top-0 z-10 dark:bg-gray-950 dark:text-blue-400 relative">
+        <div className="container flex justify-around ">
+          <div className="w-[50%]">
+            <h3 className="text-2xl">Sanaz Mohammadi</h3>
+          </div>
+          <div className="flex justify-end items-center gap-12 w-[50%]">
+            <input id="menu-toggle" type="checkbox" />
+            <label className="menu-button-container" htmlFor="menu-toggle">
+              <div className="menu-button"></div>
+            </label>
+            <ul className="flex justify-start items-center gap-12 menu">
+              {["About", "Experience", "Education", "Skills", "Projects"].map(
+                (item, idx) => (
+                  <li key={idx} className="hover:opacity-70">
+                    <a href={`#${item.toLowerCase()}`}>{item}</a>
+                  </li>
+                )
+              )}
+            </ul>
+          </div>
+        </div>
       </nav>
 
       <article className="w-full flex flex-col justify-center items-center gap-4 bg-slate-800 text-blue-900 p-24 pb-0">
-        <div className="bg-white flex dark:bg-gray-900 dark:text-blue-400">
+        <div className=" bg-white flex dark:bg-gray-900 dark:text-blue-400 items-center article-div">
           <div className="grayscale hover:grayscale-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <Image
-              className="object-cover w-[500px] h-[500px]"
+              className="object-cover w-[500px] h-[500px] profile-image"
               src="/smohammadi96/profile.png"
               width={500}
               height={500}
               alt="Picture of Sanaz Mohammadi"
             />
           </div>
-          <div className="flex flex-col justify-center items-start p-12 w-[500px] h-[500px] gap-24">
+          <div className="flex flex-col justify-center items-center p-12 w-[500px] h-[500px] gap-24 introduction">
             <div className="flex flex-col gap-1">
               <h1 className="font-bold text-3xl">Sanaz Mohammadi</h1>
               <p className="">AI researcher</p>

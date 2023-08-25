@@ -26,12 +26,12 @@ export function HeaderedSection({
       )}
     >
       <section className="flex justify-center border-b border-gray-300 p-4">
-        <h3 className="text-[var(--text)] font-bold text-3xl uppercase">
+        <h3 className="text-[var(--text)] font-bold text-3xl uppercase px-4 lg:px-0">
           {header}
         </h3>
       </section>
 
-      <section className="flex flex-col items-center justify-start w-2/3">
+      <section className="flex flex-col items-center justify-start w-2/3 education-section">
         {children}
       </section>
     </article>
